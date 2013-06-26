@@ -133,7 +133,7 @@ a:hover {
   overflow: hidden;
 }
 
-/* line 199, ../scss/_codepen.scss */
+/* line 200, ../scss/_codepen.scss */
 label {
   font-size: 1.3em;
   position: absolute;
@@ -143,22 +143,27 @@ label {
   transition: transform 0.2s linear;
 }
 
-/* line 219, ../scss/_codepen.scss */
+/* line 221, ../scss/_codepen.scss */
+.work.collapsed .relative label, .work.collapsed .relative .date, .work.collapsed .content {
+  display: none;
+}
+
+/* line 226, ../scss/_codepen.scss */
 .radio {
   display: none;
 }
 
-/* line 225, ../scss/_codepen.scss */
+/* line 232, ../scss/_codepen.scss */
 .radio:checked + .relative label {
   cursor: auto;
   transform: translateX(42px);
   margin-right: 3em;
 }
-/* line 236, ../scss/_codepen.scss */
+/* line 243, ../scss/_codepen.scss */
 .radio:checked + .relative .circle {
   background: #f98262;
 }
-/* line 240, ../scss/_codepen.scss */
+/* line 247, ../scss/_codepen.scss */
 .radio:checked ~ .content {
   max-height: 200px;
   border-color: #eee9dc;
@@ -166,7 +171,7 @@ label {
   transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
-/* line 251, ../scss/_codepen.scss */
+/* line 258, ../scss/_codepen.scss */
 .radio:checked ~ .content p {
   max-height: 200px;
   color: #eee9dc;
@@ -177,18 +182,18 @@ label {
  * mobile phones (vertical version only)
  * ------------------------------------- */
 @media screen and (max-width: 767px) {
-  /* line 264, ../scss/_codepen.scss */
+  /* line 271, ../scss/_codepen.scss */
   #timeline {
     margin-left: 0;
     padding-left: 0;
     border-left: none;
   }
-  /* line 268, ../scss/_codepen.scss */
+  /* line 275, ../scss/_codepen.scss */
   #timeline li {
     margin: 50px 0;
   }
 
-  /* line 272, ../scss/_codepen.scss */
+  /* line 279, ../scss/_codepen.scss */
   label {
     width: 85%;
     font-size: 1.1em;
@@ -199,17 +204,17 @@ label {
     transform: translateX(18px);
   }
 
-  /* line 281, ../scss/_codepen.scss */
+  /* line 288, ../scss/_codepen.scss */
   .content {
     padding-top: 45px;
     border-color: #eee9dc;
   }
-  /* line 284, ../scss/_codepen.scss */
+  /* line 291, ../scss/_codepen.scss */
   .content:before, .content:after {
     border: solid transparent;
     bottom: 100%;
   }
-  /* line 288, ../scss/_codepen.scss */
+  /* line 295, ../scss/_codepen.scss */
   .content:before {
     border-bottom-color: inherit;
     border-width: 17px;
@@ -217,7 +222,7 @@ label {
     left: 50px;
     margin-left: -17px;
   }
-  /* line 295, ../scss/_codepen.scss */
+  /* line 302, ../scss/_codepen.scss */
   .content:after {
     border-bottom-color: #73a58c;
     border-width: 20px;
@@ -225,18 +230,18 @@ label {
     left: 50px;
     margin-left: -20px;
   }
-  /* line 302, ../scss/_codepen.scss */
+  /* line 309, ../scss/_codepen.scss */
   .content p {
     font-size: 0.9em;
     line-height: 1.4;
   }
 
-  /* line 307, ../scss/_codepen.scss */
+  /* line 314, ../scss/_codepen.scss */
   .circle, .date {
     display: none;
   }
 }
-/* line 313, ../scss/_codepen.scss */
+/* line 320, ../scss/_codepen.scss */
 footer {
   font-size: 80%;
 }
