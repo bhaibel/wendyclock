@@ -5,7 +5,7 @@ IrregularGentlewomen.toggleIncident = function(eventListItem) {
 }
 
 $(document).ready(function() {
-  $('#timeline').on('.circle', 'click', function(e) {
+  $('#timeline').on('click', '.circle', function(e) {
     IrregularGentlewomen.toggleIncident($(e.target).parents('.work'));
-  })
+  });
 });

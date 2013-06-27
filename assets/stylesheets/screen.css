@@ -145,7 +145,11 @@ label {
 
 /* line 221, ../scss/_codepen.scss */
 .work.collapsed .relative label, .work.collapsed .relative .date, .work.collapsed .content {
-  display: none;
+  visibility: hidden;
+}
+
+.work.collapsed:hover .relative label, .work.collapsed:hover .relative .date, .work.collapsed:hover .content {
+  visibility: visible;
 }
 
 /* line 226, ../scss/_codepen.scss */
